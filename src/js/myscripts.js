@@ -139,3 +139,25 @@ try {
     colapse_menu.classList.toggle('colapse');
   });
 } catch (e) {}
+
+try {
+  let my_inputs = document.querySelectorAll('.my_input');
+  my_inputs.forEach(function (input) {
+    input.addEventListener('focus', function (e) {
+      input.parentElement.querySelector('label').classList.add('focus');
+    });
+    input.addEventListener('blur', function (e) {
+      input.parentElement.querySelector('label').classList.remove('focus');
+    });
+  });
+
+  let video = document.querySelector('.video');
+  let v_btn = video.querySelector('a');
+  let v = video.querySelector('video');
+  v_btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    v.play();
+    v.controls = true;
+    v_btn.classList.add('d-none');
+  });
+} catch (e) {}

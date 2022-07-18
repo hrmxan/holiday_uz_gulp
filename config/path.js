@@ -28,6 +28,11 @@ module.exports = {
         watch: pathSrc + "/img/**/*.{jpg,jpeg,png,gif,svg}",
         dest: pathDest + "/img"
     },
+    video: {
+        src: pathSrc + "/video/*.{mp4,webm,ogg,mpg,avi}",
+        watch: pathSrc + "/video/**/*.{mp4,webm,ogg,mpg,avi}",
+        dest: pathDest + "/video"
+    },
     font: {
         src: pathSrc + "/fonts/*.{eot,svg,oct,ttc,otf,ttf,woff,woff2}",
         watch: pathSrc + "/fonts/**/*.{eot,svg,oct,ttc,otf,ttf,woff,woff2}",

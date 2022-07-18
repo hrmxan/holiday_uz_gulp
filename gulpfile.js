@@ -10,6 +10,7 @@ const scss = require("./task/scss.js");
 const css = require("./task/css.js");
 const js = require("./task/js.js");
 const img = require("./task/img.js");
+const video = require("./task/video.js");
 const font = require("./task/font.js");
 
 
@@ -31,6 +32,7 @@ const watcher = () => {
     watch(path.css.watch, css).on('all', brawserSync.reload);
     watch(path.js.watch, js).on('all', brawserSync.reload);
     watch(path.img.watch, img).on('all', brawserSync.reload);
+    watch(path.video.watch, video).on('all', brawserSync.reload);
     watch(path.font.watch, font).on('all', brawserSync.reload);
 }
 
@@ -39,10 +41,11 @@ exports.scss = scss;
 exports.css = css;
 exports.js = js;
 exports.img = img;
+exports.video = video;
 exports.font = font;
 
 exports.dev = series(
     clear,
-    parallel(html, scss, js, img, css, font),
+    parallel(html, scss, js, img, css, font, video),
     parallel(watcher, server)
 );

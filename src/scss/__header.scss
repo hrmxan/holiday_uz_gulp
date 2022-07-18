@@ -3,6 +3,9 @@ header {
   font-family: 'Cera Pro';
   padding-bottom: 104px;
   overflow: hidden;
+  &.aboute__header {
+    padding-bottom: 270px;
+  }
 }
 
 nav {
