@@ -1,0 +1,32 @@
+$kok: #114A37;
+
+* a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        color: white;
+    }
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+  background-color: #f3f3f3;
+}
+main {
+    padding-bottom: 0 !important;
+}
+ul, ol, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}

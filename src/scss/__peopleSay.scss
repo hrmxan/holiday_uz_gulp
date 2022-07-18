@@ -1,0 +1,165 @@
+.peoples {
+  margin-top: 100px;
+  margin-bottom: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__left {
+    h1 {
+      font-family: 'Cera Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 110%;
+      color: #000000;
+    }
+
+    p {
+      font-family: 'Cera Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 110%;
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__right {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    @media (max-width: 991px) {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 5px;
+      background-color: #114A37;
+      border-radius: 100px;
+      margin-left: -25px;
+
+      img {
+        box-shadow: 3px 1px 14px rgba(0, 0, 0, 0.25);
+        border-radius: 100%;
+      }
+
+      p {
+        width: 0;
+        height: 0;
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0;
+        line-height: 120%;
+        color: #FFFFFF;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: 0.5s;
+      }
+
+      &.open {
+        p {
+          width: 270px;
+          height: auto;
+          padding: 0 13px 0 85px;
+          font-size: 16px;
+        }
+      }
+
+      .peopleUser {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.people__card {
+  color: #000000;
+  background-color: white;
+  padding: 20px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+
+  &.any {
+    color: #FFFFFF;
+    justify-content: flex-end;
+    background-image: url('../img/pc2.png');
+    background-size: cover;
+    background-position: center;
+
+    .top--free {
+      flex-grow: 0;
+    }
+  }
+
+  &.free {
+    .desc {
+      flex-grow: 1;
+    }
+  }
+
+  .top--free {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .title {
+    display: flex;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 15px;
+  }
+
+  .desc {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 27px;
+  }
+
+  .views {
+    display: flex;
+    align-items: center;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    .see {
+      display: flex;
+      align-items: center;
+      margin-right: 22px;
+
+      img {
+        margin-right: 4px;
+      }
+    }
+
+    .comment {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 4px;
+      }
+    }
+  }
+}

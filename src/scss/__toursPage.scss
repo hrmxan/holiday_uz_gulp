@@ -1,0 +1,114 @@
+.bestTours {
+  margin-top: -200px;
+
+  &__title {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 530px;
+    margin: 0 auto 40px;
+  }
+}
+
+.bestCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  padding: 24px;
+  min-height: 318px;
+  position: relative;
+  background-color: #FFFFFF;
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    background: #EEC68B;
+
+    strong {
+      color: #FFFFFF;
+    }
+
+    p {
+      color: #FFFFFF;
+    }
+
+    img {
+      transform: scale(1.1);
+    }
+  }
+
+  strong {
+    display: flex;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #000000;
+    margin-bottom: 9px;
+    position: relative;
+  }
+
+  p {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 110%;
+    color: #000000;
+    margin-bottom: 5px;
+    position: relative;
+  }
+
+  span {
+    display: flex;
+    padding: 9px 11px;
+    background-color: #F7E084;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 110%;
+    color: #000000;
+    position: relative;
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+    transition: 0.5s;
+  }
+}
+
+.bestBottom__title {
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
+  margin-top: 97px;
+  margin-bottom: 7px;
+}
+
+.bestBottom__text {
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 72px;
+}
+.tour__bottom {
+  margin-bottom: 200px;
+}

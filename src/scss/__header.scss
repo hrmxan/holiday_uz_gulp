@@ -1,0 +1,524 @@
+header {
+  background-color: $kok;
+  font-family: 'Cera Pro';
+  padding-bottom: 104px;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  position: relative;
+  padding: 24px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 60px;
+
+      img {
+        height: 34px;
+      }
+    }
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    order: 2;
+    padding: 0;
+
+
+    ul {
+      display: flex;
+
+      li {
+        display: flex;
+        margin: 0 5px;
+
+        a {
+          padding: 7px 15px;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    @media (max-width: 1235px) {
+      order: 3;
+      width: 100%;
+
+      ul {
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+        height: 0;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 100;
+        transition: 0.5s;
+        
+        li {
+          margin: 15px 0;
+        }
+        
+        &.colapse {
+          height: 508px;
+          padding: 50px 0;
+        }
+      }
+    }
+  }
+
+  .toolbar {
+    display: flex;
+    align-items: center;
+    order: 3;
+
+    .toolbar__link {
+      padding: 5px;
+      margin-right: 20px;
+      position: relative;
+      &.colapse {
+        margin-right: 35px;
+        display: none;
+        @media (max-width: 1235px) {
+          display: flex;
+        }
+      }
+
+      &.notif {
+        &::before {
+          content: '';
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          width: 4px;
+          height: 4px;
+          border-radius: 100%;
+          background-color: #FF6868;
+        }
+      }
+
+      &.login {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 9px;
+        }
+      }
+    }
+
+    @media (max-width: 1235px) {
+      order: 2;
+    }
+  }
+}
+
+header {
+  .header__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    h1 {
+      font-family: 'Cera Pro';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 100px;
+      line-height: 110%;
+      color: rgba($color: #fff, $alpha: 0.3);
+      padding-right: 400px;
+      position: relative;
+      z-index: 10;
+      @media (max-width: 991px) {
+        font-size: 80px;
+        padding-right: 200px;
+      }
+      @media (max-width: 767px) {
+        text-align: center;
+        font-size: 70px;
+        padding: 0;
+      }
+
+      @keyframes indic {
+
+        0%,
+        49.9% {
+          opacity: 1;
+        }
+
+        50%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      span.h {
+        color: rgba($color: #fff, $alpha: 0.9);
+      }
+    }
+
+    .title {
+      padding: 100px 0;
+    }
+
+    .airplan {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 600px;
+      @media (max-width: 991px) {
+        width: 400px;
+      }
+      @media (max-width: 767px) {
+        position: relative;
+      }
+
+      img.airplan_img {
+        width: 100%;
+        position: relative;
+        animation-name: bulut;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+      }
+
+      img.bulut {
+        position: absolute;
+
+        &:nth-child(1) {
+          top: 60px;
+          left: 150px;
+          width: 50%;
+          animation-name: bulut;
+          animation-duration: 20s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
+        }
+
+        &:nth-child(2) {
+          top: 0;
+          right: -15px;
+          width: 50%;
+          animation-name: bulut;
+          animation-duration: 16s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
+        }
+
+        &:nth-child(4) {
+          bottom: -70px;
+          left: -30px;
+          width: 80%;
+          animation-name: bulut;
+          animation-duration: 16s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
+          animation-direction: alternate;
+        }
+
+        &:nth-child(5) {
+          bottom: 0;
+          right: -15px;
+          width: 30%;
+          animation-name: bulut;
+          animation-duration: 20s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-out;
+        }
+
+      }
+
+      @keyframes bulut {
+        0% {
+          transform: translateY(0);
+        }
+
+        25% {
+          transform: translateY(5%);
+        }
+
+        50% {
+          transform: translateY(0);
+        }
+
+        75% {
+          transform: translateY(-5%);
+        }
+
+        100% {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}
+
+.bottom__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+
+  .form__nav {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+
+    ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: 'Cera Pro';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 110%;
+          text-transform: uppercase;
+          color: rgba($color: #fff, $alpha: 0.6);
+          padding: 7px 0;
+          margin: 0 30px 0 0;
+          flex-shrink: 0;
+
+          @media (max-width: 767px) {
+            margin: 0 15px 0 0;
+            font-size: 14px;
+          }
+
+          &.active {
+            color: rgba($color: #fff, $alpha: 1);
+            position: relative;
+
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .form__inputs {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+
+
+      .input_body,
+      button {
+        min-width: 255px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        padding: 18px 15px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+        position: relative;
+
+        @media (max-width: 767px) {
+          min-width: 0;
+          width: 100%;
+          margin-right: 0;
+        }
+
+        &.select {
+          padding: 0 0 0 15px;
+        }
+
+        label {
+          display: flex;
+          align-items: center;
+
+          img {
+            flex-shrink: 1;
+          }
+
+          input {
+            flex-grow: 1;
+          }
+
+          input[type="date"] {
+            position: relative;
+            background-color: transparent;
+            border: none;
+            font-family: 'Cera Pro';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 110%;
+            color: #FFFFFF;
+            outline: none;
+
+            &::-webkit-calendar-picker-indicator {
+              display: flex;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: none;
+            }
+          }
+        }
+
+        .select2-container--default {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          flex-grow: 1;
+        }
+
+        .select2-selection__arrow {
+          display: none;
+        }
+
+        .select2-selection {
+          background-color: transparent;
+          border: 0;
+          display: flex;
+          align-items: center;
+        }
+
+        .select2-selection__rendered {
+          padding: 0;
+          font-family: 'Cera Pro';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 110%;
+          color: #FFFFFF;
+
+        }
+
+        img {
+          flex-shrink: 1;
+          margin-right: 10px;
+        }
+      }
+
+      button {
+        border: 0;
+        outline: none;
+        background-color: #ffff;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 110%;
+        color: #114A37;
+      }
+    }
+  }
+}
+
+.left__links {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 15px;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+  transition: 0.5s;
+  @media (max-width: 1050px) {
+    transform: rotate(-90deg) translateY(0%);
+  }
+  background-color: $kok;
+  &.on {
+    transform: rotate(-90deg) translateY(100%);
+  }
+  a.follow {
+    display: flex;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 110%;
+    padding-bottom: 11px;
+    color: #FFFFFF;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+      height: 2px;
+      background-color: white;
+    }
+  }
+  a.links {
+    margin-left: 30px;
+    transform: rotate(90deg);
+    transform-origin: center;
+  }
+  .clicker {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.5s;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    img {
+      transition: 0.5s;
+    }
+    @media (max-width: 1050px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &.on {
+    .clicker {
+      img {
+        transform: rotateX(180deg);
+      }
+    }
+  }
+}

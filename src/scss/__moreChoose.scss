@@ -1,0 +1,87 @@
+.titleContent {
+  margin-top: 100px;
+  margin-bottom: 26px;
+}
+
+.chooseCard {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+  &:hover {
+    img.chooseCard__img {
+      transform: scale(1) translateX(0);
+    }
+  }
+
+
+  &__img {
+    position: relative;
+    // min-height: 100%;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    transition: 0.5s;
+    transform: scale(1.1) translateX(10px);
+  }
+
+  border-bottom: 5px solid #EFC68B;
+
+  &__body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+
+    strong {
+      font-family: 'Cera Pro';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 110%;
+      color: #FFFFFF;
+      margin-bottom: 2px;
+      position: relative;
+    }
+
+    p {
+      font-family: 'Cera Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 110%;
+      color: #FFFFFF;
+      position: relative;
+      margin-bottom: 13px;
+    }
+
+    span {
+      position: relative;
+      display: flex;
+      align-items: center;
+      font-family: 'Cera Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #FFFFFF;
+      img {
+        margin-right: 5px;
+      }
+    }
+
+
+    &--mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(105.27deg, #000000 19.91%, rgba(0, 0, 0, 0) 65.05%);
+      opacity: 0.5;
+    }
+
+  }
+}

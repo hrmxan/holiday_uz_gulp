@@ -1,0 +1,92 @@
+.tipCard {
+  display: flex;
+  position: relative;
+
+  .img_main {
+    height: 338px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 37px 20px 16px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,0.7) 100%);
+
+    .title {
+      font-family: 'Cera Pro';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 100%;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      max-width: 280px;
+    }
+
+    .futer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .locate {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          font-family: 'Cera Pro';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 110%;
+          color: #FFFFFF;
+          margin: 0;
+        }
+
+        span {
+          font-family: 'Cera Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 110%;
+          color: #34B388;
+        }
+      }
+
+      .views {
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+
+        .see {
+          display: flex;
+          align-items: center;
+          margin-right: 22px;
+
+          img {
+            margin-right: 4px;
+          }
+        }
+
+        .comment {
+          display: flex;
+          align-items: center;
+
+          img {
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+}

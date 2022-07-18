@@ -1,0 +1,192 @@
+.impressions__header {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    margin-top: 40px;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &--title {
+      font-family: 'Cera Pro';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 110%;
+      color: #FFFFFF;
+      max-width: 570px;
+      margin-bottom: 0;
+
+      @media (max-width: 991px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #EEC68B;
+      border-radius: 4px;
+      padding: 18px 78px;
+    }
+  }
+}
+
+
+.impressions {
+  margin-top: -100px;
+}
+
+.impressions__brends {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 31px;
+
+  &__links {
+    display: flex;
+    align-items: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 40px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.impressionsSwiper {
+  img {
+    max-width: 100%;
+    height: 260px;
+    border-radius: 4px;
+  }
+}
+
+.impressionsContent {
+  margin-bottom: 80px;
+
+  h1 {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 110%;
+    color: #000000;
+    margin-bottom: 37px;
+    margin-top: 43px;
+  }
+
+  p {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  .left {
+    border-right: none;
+    @media (min-width: 768px) {
+      padding-right: 40px;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .right {
+    @media (min-width: 768px) {
+      padding-left: 40px;
+    }
+  }
+}
+
+.impBottom__filter {
+  padding: 19px 25px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 87px;
+  flex-wrap: wrap;
+  
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 60px;
+  }
+
+  .impBottom__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 110%;
+        color: #000000;
+        margin-right: 30px;
+
+        &.last {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .status {
+    display: flex;
+    align-items: center;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    @media (max-width: 1199px) {
+      margin-top: 20px;
+    }
+    span {
+      display: flex;
+      align-items: center;
+      margin-right: 39px;
+      img {
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+.imp_bot {
+  margin-bottom: 132px;
+}

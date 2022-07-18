@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/select2.min.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>hoiday</title>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      @@include('./chunk/navbar.html')
+      <div class="header__body">
+        <div class="title container">
+          <h1>
+            <img src="./img/search.png">
+            <!-- <span class="kursor">|</span> -->
+            <span class="typed__words"></span>
+          </h1>
+        </div>
+        <div class="airplan">
+          <img class="bulut" src="./img/orqa_bulut_1.png">
+          <img class="bulut" src="./img/orqa_bulut_2.png">
+          <img class="airplan_img" src="./img/airplan.png">
+          <img class="bulut" src="./img/old_bulut1.png">
+          <img class="bulut" src="./img/old_bulut2.png">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bottom__form">
+      <div class="container">
+        <div class="form__nav">
+          <ul>
+            <li>
+              <a href="#">
+                Stays
+              </a>
+            </li>
+            <li>
+              <a class="active" href="#">
+                Flights
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Car Rentals
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Attractions
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Airport Taxis
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="form__inputs">
+          <form>
+            <div class="input_body select">
+              <img src="./img/air_ic1.png">
+              <select class="my-select-input">
+                <option value="tashkent">
+                  Tashkent (TAS)
+                </option>
+                <option value="namangan">
+                  Namangan (TAS)
+                </option>
+              </select>
+            </div>
+            <div class="input_body select">
+              <img src="./img/air_ic2.png">
+              <select class="my-select-input">
+                <option value="tashkent">
+                  Tashkent (TAS)
+                </option>
+                <option value="namangan">
+                  Namangan (TAS)
+                </option>
+              </select>
+            </div>
+            <div class="input_body">
+              <label for="input_data">
+                <img src="./img/inp_data.png">
+                <input id="input_data" type="date" value="2022-07-01">
+              </label>
+            </div>
+            <div class="input_body">
+              <label for="input_data_from">
+                <img src="./img/inp_data.png">
+                <input id="input_data_from" type="date" value="2022-07-01">
+              </label>
+            </div>
+            <button type="submit">
+              Show List
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="left__links">
+        <a href="#" class="follow">FOLLOW US</a>
+        <a href="#" class="links">
+          <img src="./img/facebook.png">
+        </a>
+        <a href="#" class="links">
+          <img src="./img/telegram.png">
+        </a>
+        <a href="#" class="links">
+          <img src="./img/instagram.png">
+        </a>
+        <a href="#" class="prevent clicker">
+          <img src="./img/clicker.png">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    @@include('./chunk/cityCards.html')
+    @@include('./chunk/ourTours.html')
+    @@include('./chunk/typesBrowse.html')
+    @@include('./chunk/moreChoose.html')
+    @@include('./chunk/appartments.html')
+    @@include('./chunk/peopleSay.html')
+    @@include('./chunk/getTrip.html')
+    @@include('./chunk/join.html')
+    @@include('./chunk/products.html')
+  </main>
+  @@include('./chunk/footer.html')
+  
+
+  <script src="./js/typed.min.js"></script>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/select2.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/myscripts.js"></script>
+</body>
+
+</html>

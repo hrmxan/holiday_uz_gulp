@@ -1,0 +1,175 @@
+main {
+  padding-bottom: 200px;
+}
+
+
+.cityCard__imgWrap {
+  height: 180px;
+  border-bottom: 5px solid rgba(239, 198, 139, 1);
+  overflow: hidden;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+  }
+}
+
+section.cityCards {
+  .topTitle {
+    padding-top: 50px;
+    padding-bottom: 26px;
+  }
+}
+
+
+.topTitle {
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 110%;
+  color: #000000;
+}
+
+.titleContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 40px;
+    height: 20px;
+  }
+}
+
+.titleContent--link:hover {
+  animation-name: linked;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;  
+}
+
+@keyframes linked {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
+
+.cityCard {
+  background-color: #FFFFFF;
+  transition: 0.5s;
+  margin-bottom: 20px;
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    .cityCard__imgWrap{
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__body {
+    padding: 17px 10px 15px;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      display: flex;
+      justify-content: space-between;
+
+      &__left {
+        .name {
+          font-family: 'Cera Pro';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 110%;
+          color: #000000;
+          margin-bottom: 2px;
+        }
+
+        .cauntry {
+          font-family: 'Cera Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 110%;
+          color: #000000;
+          margin-bottom: 0;
+        }
+      }
+
+      &__right {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+
+        .price {
+          font-family: 'Cera Pro';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 110%;
+          text-align: right;
+          color: #FFB0B0;
+        }
+
+        p {
+          font-family: 'Cera Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 110%;
+          text-align: right;
+          color: #000000;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__user {
+      display: flex;
+      align-items: center;
+      margin-top: 14px;
+
+      &--img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+
+        img {
+          width: 38px;
+          height: 38px;
+          border-radius: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        strong {
+          font-family: 'Cera Pro';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 110%;
+          color: #000000;
+        }
+
+        &--status {
+          background: #C9FFC5;
+          border-radius: 1px;
+          padding: 2px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/select2.min.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Tours</title>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      @@include('./chunk/navbar.html')
+      <div class="container">
+        <div class="path">
+          <img src="./img/path.png">|
+          <a href="#!">Home</a>/
+          <a href="#!">Tours</a>
+        </div>
+        <div class="tours__header--bg">
+          <img src="./img/tours_bg.png">
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    @@include('./chunk/bestTours.html')
+
+    <section>
+      <div class="container">
+        <h1 class="bestBottom__title">The best tour packages are special offers for you</h1>
+        <p class="bestBottom__text">The best tour packages are special offers for you</p>
+        @@include('./chunk/inner_blocks/ourToursCard.html')
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        @@include('./chunk/inner_blocks/seMore.html')
+      </div>
+    </section>
+
+    <section>
+      <div class="container tour__bottom">
+        @@include('./chunk/inner_blocks/send.html', {
+          src: './img/phone-call.png',
+        })
+      </div>
+    </section>
+
+  </main>
+  @@include('./chunk/footer.html')
+
+  <script src="./js/typed.min.js"></script>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/select2.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/myscripts.js"></script>
+</body>
+
+</html>

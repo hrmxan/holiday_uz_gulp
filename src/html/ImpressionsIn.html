@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/select2.min.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>impressions</title>
+</head>
+
+<body>
+  <header class="impressions__header">
+    <div class="container-fluid">
+      @@include('./chunk/navbar.html')
+      <div class="container">
+        <div class="path">
+          <img src="./img/path.png">|
+          <a href="#!">Home</a>/
+          <a href="#!">impressions</a>/
+          <a href="#!">Linda Holland’s</a>
+        </div>
+        <div class="impressions__header__top">
+          <h1 class="impressions__header__top--title">About the pearl of the East and Uzbekistan</h1>
+          <a href="#!">Booking tour</a>
+        </div>
+        <div class="impressions__brends">
+          <a href="./index.html" class="logo">
+            <img src="./img/logo_imp.png">
+          </a>
+          <div class="impressions__brends__links">
+            <a href="#!">
+              <img src="./img/facebook.png">
+            </a>
+            <a href="#!">
+              <img src="./img/instagram.png">
+            </a>
+            <a href="#!">
+              <img src="./img/telegram.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    @@include('./chunk/impressionsTop.html')
+    @@include('./chunk/impressionsContents.html')
+    @@include('./chunk/impressionsBottoms.html')
+
+    <section class="imp_bot">
+      <div class="container">
+        @@include('./chunk/inner_blocks/bestToursCard.html')
+      </div>
+    </section>
+  </main>
+  @@include('./chunk/footer.html')
+
+  <script src="./js/typed.min.js"></script>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/select2.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/myscripts.js"></script>
+</body>
+
+</html>
