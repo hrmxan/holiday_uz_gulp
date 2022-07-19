@@ -92,6 +92,29 @@ try {
       prevEl: ".appcPrec",
     },
   });
+
+  var swiper = new Swiper(".myImpressionSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    breakpoints: {
+      992: {
+        slidesPerView: 4,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      576: {
+        slidesPerView: 2,
+      }
+    },
+    navigation: {
+      nextEl: ".appcNext",
+      prevEl: ".appcPrec",
+    },
+  });
 } catch (e) {}
 
 try {

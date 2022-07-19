@@ -6,6 +6,9 @@ header {
   &.aboute__header {
     padding-bottom: 270px;
   }
+  &.countries__header {
+    padding-bottom: 170px;
+  }
 }
 
 nav {
@@ -345,8 +348,7 @@ header {
       height: 100%;
 
 
-      .input_body,
-      button {
+      .input_body, button {
         min-width: 255px;
         margin-right: 8px;
         margin-bottom: 8px;
